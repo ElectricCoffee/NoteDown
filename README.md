@@ -4,9 +4,9 @@ Let's face it: taking notes in Markdown sucks when you study in any sort of math
 be it mathematics, computer science, physics etc.
 
 While Markdown works well for general note-taking due to its minimalist syntax, 
-it absolutely sucks when it comes to inputting formulae.
+it absolutely sucks when it comes to inputting formulæ.
 
-To solve this, I propose NoteDown: markdown with a set of convenient extensions that makes it usable for technical note-taking.
+To solve this, I propose NoteDown: Markdown with a set of convenient extensions that makes it usable for technical note-taking.
 
 Features:
 * LaTeX-like equation editing
