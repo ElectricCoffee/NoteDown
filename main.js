@@ -4,8 +4,12 @@ const url  = require('url')
 
 let window
 
-function createWindow() {
-  window = new BrowserWindow({width: 800, height: 600})
+app.on('ready', () => {
+  window = new BrowserWindow({
+    title: 'NoteDown',
+    width: 800, height: 600,
+    show: false
+  })
 
   window.loadURL(url.format({
     pathname: path.join(__dirname, 'index.xhtml'),
@@ -16,9 +20,12 @@ function createWindow() {
   window.on('closed', () => {
     window = null
   })
-}
 
-app.on('ready', createWindow)
+  window.on('ready-to-show', () =>{
+    window.show();
+    window.focus();
+  })
+})
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
