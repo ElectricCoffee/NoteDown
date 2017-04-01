@@ -12,7 +12,7 @@ app.on('ready', () => {
   })
 
   window.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.xhtml'),
+    pathname: path.join(__dirname, 'windows/index.xhtml'),
     protocol: 'file:',
     slashes: true
   }))
